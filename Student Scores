@@ -1,0 +1,13 @@
+import random
+
+# Generate 20 random marks between 1 and 100
+marks = [random.randint(1, 100) for _ in range(20)]
+
+# Create three separate lists
+list1 = [mark for mark in marks if mark <= 30]
+list2 = [mark for mark in marks if 31 <= mark <= 69]
+list3 = [mark for mark in marks if mark >= 70]
+
+print("List 1 (marks <= 30):", list1)
+print("List 2 (marks between 31 and 69):", list2)
+print("List 3 (marks >= 70):", list3)
